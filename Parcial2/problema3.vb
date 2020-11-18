@@ -34,7 +34,7 @@
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        Close()
+        End
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
@@ -142,6 +142,37 @@
                     Else
 
                         'Escribir "Son iguales";'
+
+                        ' If A = B And A = C Then'
+                        '   MsgBox("Los numero son iguales.")'
+                        'Else'
+                        If A = C Or C = A Then
+                            Menor = A
+                            lblRMenor.Text = Menor
+                            MenorSuma = MenorSuma + (Menor + Menor)
+                            lblRMenorS.Text = MenorSuma
+                            MenorCantidad = MenorCantidad + 2
+                            lblRMenorC.Text = MenorCantidad
+                        Else
+                            If A = B Or B = A Then
+                                Menor = A
+                                lblRMenor.Text = Menor
+                                MenorSuma = MenorSuma + (Menor + Menor)
+                                lblRMenorS.Text = MenorSuma
+                                MenorCantidad = MenorCantidad + 2
+                                lblRMenorC.Text = MenorCantidad
+                            Else
+                                If C = B Or B = C Then
+                                    Menor = C
+                                    lblRMayor.Text = Menor
+                                    MenorSuma = MenorSuma + (Menor + Menor)
+                                    lblRMenorS.Text = MenorSuma
+                                    MenorCantidad = MenorCantidad + 2
+                                    lblRMenorC.Text = MenorCantidad
+                                End If
+                            End If
+                        End If
+                        'End If'
 
                     End If
                 End If
