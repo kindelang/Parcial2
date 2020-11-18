@@ -93,13 +93,23 @@
                                 MayorCantidad = MayorCantidad + 2
                                 lblRMayorC.Text = MayorCantidad
                             Else
-                                If A = B Then
+                                If A = B Or B = A Then
                                     Mayor = A
                                     lblRMayor.Text = Mayor
                                     MayorSuma = MayorSuma + (Mayor + Mayor)
                                     lblRMayorS.Text = MayorSuma
                                     MayorCantidad = MayorCantidad + 2
                                     lblRMayorC.Text = MayorCantidad
+
+                                Else
+                                    If C = B Or B = C Then
+                                        Mayor = C
+                                        lblRMayor.Text = Mayor
+                                        MayorSuma = MayorSuma + (Mayor + Mayor)
+                                        lblRMayorS.Text = MayorSuma
+                                        MayorCantidad = MayorCantidad + 2
+                                        lblRMayorC.Text = MayorCantidad
+                                    End If
                                 End If
                             End If
                         End If
