@@ -85,7 +85,7 @@
                         If A = B And A = C Then
                             MsgBox("Los numero son iguales.")
                         Else
-                            If A = C Then
+                            If A = C Or C = A Then
                                 Mayor = A
                                 lblRMayor.Text = Mayor
                                 MayorSuma = MayorSuma + (Mayor + Mayor)
